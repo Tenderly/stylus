@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
 )
 
 type L1Interface interface {

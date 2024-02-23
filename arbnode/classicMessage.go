@@ -10,9 +10,9 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
 )
 
 type ClassicOutboxRetriever struct {

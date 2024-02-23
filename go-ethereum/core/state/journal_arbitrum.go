@@ -1,6 +1,6 @@
 package state
 
-import "github.com/ethereum/go-ethereum/common"
+import "github.com/tenderly/stylus/go-ethereum/common"
 
 type wasmActivation struct {
 	moduleHash common.Hash

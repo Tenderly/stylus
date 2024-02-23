@@ -16,15 +16,15 @@ import (
 	koanfjson "github.com/knadh/koanf/parsers/json"
 	flag "github.com/spf13/pflag"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/metrics/exp"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/metrics/exp"
 
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/cmd/util/confighelpers"
-	"github.com/offchainlabs/nitro/das"
-	"github.com/offchainlabs/nitro/util/headerreader"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/cmd/util/confighelpers"
+	"github.com/tenderly/stylus/das"
+	"github.com/tenderly/stylus/util/headerreader"
 )
 
 type DAServerConfig struct {

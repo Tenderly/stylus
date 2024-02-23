@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
 )
 
 type HardHatArtifact struct {

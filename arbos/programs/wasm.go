@@ -1,5 +1,5 @@
 // Copyright 2022-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 //go:build js
 // +build js
@@ -7,12 +7,12 @@
 package programs
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/offchainlabs/nitro/arbos/burn"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/burn"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 type addr = common.Address

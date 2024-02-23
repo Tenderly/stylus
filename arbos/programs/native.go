@@ -23,13 +23,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbos/burn"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbos/burn"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/log"
 )
 
 type u8 = C.uint8_t

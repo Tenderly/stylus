@@ -8,10 +8,10 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/das/dastree"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/das/dastree"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
 )
 
 type MemoryBackedStorageService struct { // intended for testing and debugging

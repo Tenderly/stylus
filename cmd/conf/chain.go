@@ -6,9 +6,9 @@ package conf
 import (
 	"time"
 
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/util/rpcclient"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/util/rpcclient"
 )
 
 type L1Config struct {

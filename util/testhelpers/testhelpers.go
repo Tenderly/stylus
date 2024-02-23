@@ -12,9 +12,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/util/colors"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/util/colors"
 )
 
 // Fail a test should an error occur

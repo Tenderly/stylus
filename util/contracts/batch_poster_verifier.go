@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/solgen/go/bridgegen"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/solgen/go/bridgegen"
 )
 
 type BatchPosterVerifier struct {

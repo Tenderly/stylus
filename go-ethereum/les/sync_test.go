@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/light"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/light"
 )
 
 // Test light syncing which will download all headers from genesis.

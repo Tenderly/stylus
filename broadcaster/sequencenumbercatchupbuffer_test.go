@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
 )
 
 func TestGetEmptyCacheMessages(t *testing.T) {

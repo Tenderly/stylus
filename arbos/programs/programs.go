@@ -1,5 +1,5 @@
 // Copyright 2022-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package programs
 
@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbcompress"
-	"github.com/offchainlabs/nitro/arbos/storage"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbcompress"
+	"github.com/tenderly/stylus/arbos/storage"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/math"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 type Programs struct {

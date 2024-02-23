@@ -13,17 +13,17 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
 
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/blsSignatures"
-	"github.com/offchainlabs/nitro/das/dastree"
-	"github.com/offchainlabs/nitro/solgen/go/bridgegen"
-	"github.com/offchainlabs/nitro/util/contracts"
-	"github.com/offchainlabs/nitro/util/pretty"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/blsSignatures"
+	"github.com/tenderly/stylus/das/dastree"
+	"github.com/tenderly/stylus/solgen/go/bridgegen"
+	"github.com/tenderly/stylus/util/contracts"
+	"github.com/tenderly/stylus/util/pretty"
 )
 
 type AggregatorConfig struct {

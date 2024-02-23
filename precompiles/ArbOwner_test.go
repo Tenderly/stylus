@@ -9,17 +9,17 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/params"
 
-	"github.com/offchainlabs/nitro/arbos/arbosState"
-	"github.com/offchainlabs/nitro/arbos/burn"
-	"github.com/offchainlabs/nitro/arbos/l1pricing"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/burn"
+	"github.com/tenderly/stylus/arbos/l1pricing"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func TestArbOwner(t *testing.T) {

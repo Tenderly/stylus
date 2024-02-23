@@ -7,9 +7,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 const BinSize = 64 * 1024 // 64 kB

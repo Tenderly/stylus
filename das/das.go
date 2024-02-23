@@ -11,13 +11,13 @@ import (
 	"math"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/log"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/ethclient"
+	"github.com/tenderly/stylus/go-ethereum/log"
 
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/blsSignatures"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/blsSignatures"
 )
 
 type DataAvailabilityServiceWriter interface {

@@ -14,13 +14,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/log"
 
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/headerreader"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/headerreader"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 type InboxReaderConfig struct {

@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
 )
 
 func TestDelayInboxLong(t *testing.T) {

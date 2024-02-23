@@ -8,12 +8,12 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/statetransfer"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/statetransfer"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 // Each contract gets a set of storage cells with values, and code that returns a sum of their cell

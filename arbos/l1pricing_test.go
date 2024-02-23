@@ -7,17 +7,17 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/offchainlabs/nitro/arbos/arbosState"
-	"github.com/offchainlabs/nitro/arbos/l1pricing"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/l1pricing"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/math"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/util/arbmath"
 
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbos/burn"
+	"github.com/tenderly/stylus/arbos/burn"
+	"github.com/tenderly/stylus/go-ethereum/params"
 )
 
 type l1PricingTest struct {

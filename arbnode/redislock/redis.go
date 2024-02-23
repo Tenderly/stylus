@@ -11,10 +11,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
 	"github.com/go-redis/redis/v8"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 type Simple struct {

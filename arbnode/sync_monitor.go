@@ -5,8 +5,8 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/offchainlabs/nitro/arbutil"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/arbutil"
 )
 
 type SyncMonitor struct {

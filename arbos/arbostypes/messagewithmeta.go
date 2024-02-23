@@ -5,10 +5,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 )
 
 var uniquifyingPrefix = []byte("Arbitrum Nitro Feed:")

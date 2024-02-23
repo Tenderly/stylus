@@ -1,5 +1,5 @@
 // Copyright 2021-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package precompiles
 
@@ -12,22 +12,22 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/offchainlabs/nitro/arbos"
-	"github.com/offchainlabs/nitro/arbos/arbosState"
-	"github.com/offchainlabs/nitro/arbos/programs"
-	"github.com/offchainlabs/nitro/arbos/util"
-	templates "github.com/offchainlabs/nitro/solgen/go/precompilesgen"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos"
+	"github.com/tenderly/stylus/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/programs"
+	"github.com/tenderly/stylus/arbos/util"
+	templates "github.com/tenderly/stylus/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/util/arbmath"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	glog "github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	glog "github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/params"
 )
 
 type ArbosPrecompile interface {

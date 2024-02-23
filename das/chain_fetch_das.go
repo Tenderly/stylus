@@ -8,15 +8,15 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/util/pretty"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/util/pretty"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/das/dastree"
-	"github.com/offchainlabs/nitro/solgen/go/bridgegen"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/das/dastree"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/solgen/go/bridgegen"
 )
 
 type syncedKeysetCache struct {

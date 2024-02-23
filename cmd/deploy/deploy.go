@@ -12,17 +12,17 @@ import (
 	"os"
 	"time"
 
-	"github.com/offchainlabs/nitro/cmd/chaininfo"
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/util/headerreader"
-	"github.com/offchainlabs/nitro/validator/server_common"
+	"github.com/tenderly/stylus/cmd/chaininfo"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/util/headerreader"
+	"github.com/tenderly/stylus/validator/server_common"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/cmd/util"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/cmd/util"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/ethclient"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/params"
 )
 
 func main() {

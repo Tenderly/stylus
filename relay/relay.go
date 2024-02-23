@@ -11,17 +11,17 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/log"
 
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/broadcastclient"
-	"github.com/offchainlabs/nitro/broadcastclients"
-	"github.com/offchainlabs/nitro/broadcaster"
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/cmd/util/confighelpers"
-	"github.com/offchainlabs/nitro/util/sharedmetrics"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
-	"github.com/offchainlabs/nitro/wsbroadcastserver"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/broadcastclient"
+	"github.com/tenderly/stylus/broadcastclients"
+	"github.com/tenderly/stylus/broadcaster"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/cmd/util/confighelpers"
+	"github.com/tenderly/stylus/util/sharedmetrics"
+	"github.com/tenderly/stylus/util/stopwaiter"
+	"github.com/tenderly/stylus/wsbroadcastserver"
 )
 
 type Relay struct {

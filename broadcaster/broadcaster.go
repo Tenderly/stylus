@@ -9,13 +9,13 @@ import (
 
 	"github.com/gobwas/ws"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
 
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/signature"
-	"github.com/offchainlabs/nitro/wsbroadcastserver"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/util/signature"
+	"github.com/tenderly/stylus/wsbroadcastserver"
 )
 
 type Broadcaster struct {

@@ -10,22 +10,22 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/util/rpcclient"
-	"github.com/offchainlabs/nitro/validator/server_api"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/util/rpcclient"
+	"github.com/tenderly/stylus/validator/server_api"
 
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/validator"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbstate"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/go-ethereum/params"
 )
 
 type StatelessBlockValidator struct {

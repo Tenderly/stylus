@@ -12,16 +12,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/broadcaster"
-	"github.com/offchainlabs/nitro/staker"
-	"github.com/offchainlabs/nitro/util/containers"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/broadcaster"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
+	"github.com/tenderly/stylus/staker"
+	"github.com/tenderly/stylus/util/containers"
 )
 
 type InboxTracker struct {

@@ -17,11 +17,12 @@
 package vm
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"fmt"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/math"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/log"
 )
 
 // Config are the configuration options for the Interpreter
@@ -169,6 +170,7 @@ func (in *EVMInterpreter) Run(contract *Contract, input []byte, readOnly bool) (
 
 	// Arbitrum: handle Stylus programs
 	if in.evm.chainRules.IsArbitrum && state.IsStylusProgram(contract.Code) {
+		fmt.Println("Executing WASM code")
 		ret, err = in.evm.ProcessingHook.ExecuteWASM(callContext, input, in)
 		return
 	}

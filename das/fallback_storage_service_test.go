@@ -9,8 +9,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/offchainlabs/nitro/das/dastree"
+	"github.com/tenderly/stylus/das/dastree"
+	"github.com/tenderly/stylus/go-ethereum/common/math"
 )
 
 func TestFallbackStorageService(t *testing.T) {

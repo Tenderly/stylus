@@ -1,8 +1,8 @@
 package sharedmetrics
 
 import (
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
 )
 
 var (

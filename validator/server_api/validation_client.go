@@ -7,17 +7,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/validator"
 
-	"github.com/offchainlabs/nitro/util/containers"
-	"github.com/offchainlabs/nitro/util/rpcclient"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/util/containers"
+	"github.com/tenderly/stylus/util/rpcclient"
+	"github.com/tenderly/stylus/util/stopwaiter"
 
-	"github.com/offchainlabs/nitro/validator/server_common"
+	"github.com/tenderly/stylus/validator/server_common"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/node"
 )
 
 type ValidationClient struct {

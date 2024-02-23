@@ -1,16 +1,16 @@
 // Copyright 2023, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package server_api
 
 import (
 	"encoding/base64"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
 
-	"github.com/offchainlabs/nitro/util/jsonapi"
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/util/jsonapi"
+	"github.com/tenderly/stylus/validator"
 )
 
 type BatchInfoJson struct {

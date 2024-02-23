@@ -11,16 +11,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/offchainlabs/nitro/gethhook"
-	"github.com/offchainlabs/nitro/solgen/go/node_interfacegen"
-	"github.com/offchainlabs/nitro/solgen/go/precompilesgen"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/merkletree"
+	"github.com/tenderly/stylus/gethhook"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/solgen/go/node_interfacegen"
+	"github.com/tenderly/stylus/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/merkletree"
 )
 
 func TestOutboxProofs(t *testing.T) {

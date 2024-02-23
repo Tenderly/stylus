@@ -15,18 +15,17 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
 	"github.com/ipfs/go-cid"
 	coreiface "github.com/ipfs/interface-go-ipfs-core"
 	"github.com/ipfs/interface-go-ipfs-core/options"
 	"github.com/ipfs/interface-go-ipfs-core/path"
 	"github.com/multiformats/go-multihash"
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/cmd/ipfshelper"
-	"github.com/offchainlabs/nitro/das/dastree"
-	"github.com/offchainlabs/nitro/util/pretty"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/das/dastree"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/util/pretty"
 )
 
 type IpfsStorageServiceConfig struct {
@@ -63,26 +62,15 @@ func IpfsStorageServiceConfigAddOptions(prefix string, f *flag.FlagSet) {
 }
 
 type IpfsStorageService struct {
-	config     IpfsStorageServiceConfig
-	ipfsHelper *ipfshelper.IpfsHelper
-	ipfsApi    coreiface.CoreAPI
+	config IpfsStorageServiceConfig
+
+	ipfsApi coreiface.CoreAPI
 }
 
 func NewIpfsStorageService(ctx context.Context, config IpfsStorageServiceConfig) (*IpfsStorageService, error) {
-	ipfsHelper, err := ipfshelper.CreateIpfsHelper(ctx, config.RepoDir, false, config.Peers, config.Profiles)
-	if err != nil {
-		return nil, err
-	}
-	addrs, err := ipfsHelper.GetPeerHostAddresses()
-	if err != nil {
-		return nil, err
-	}
-	log.Info("IPFS node started up", "hostAddresses", addrs)
 
 	return &IpfsStorageService{
-		config:     config,
-		ipfsHelper: ipfsHelper,
-		ipfsApi:    ipfsHelper.GetAPI(),
+		config: config,
 	}, nil
 }
 
@@ -228,7 +216,7 @@ func (s *IpfsStorageService) Sync(ctx context.Context) error {
 }
 
 func (s *IpfsStorageService) Close(ctx context.Context) error {
-	return s.ipfsHelper.Close()
+	return nil
 }
 
 func (s *IpfsStorageService) String() string {

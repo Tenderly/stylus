@@ -1,5 +1,5 @@
 // Copyright 2022-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package arbtest
 
@@ -17,28 +17,28 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	_ "github.com/ethereum/go-ethereum/eth/tracers/js"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbcompress"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbos/programs"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/solgen/go/mocksgen"
-	"github.com/offchainlabs/nitro/solgen/go/precompilesgen"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/colors"
-	"github.com/offchainlabs/nitro/util/testhelpers"
-	"github.com/offchainlabs/nitro/validator/valnode"
+	"github.com/tenderly/stylus/arbcompress"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbos/programs"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/state"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/eth/tracers"
+	_ "github.com/tenderly/stylus/go-ethereum/eth/tracers/js"
+	"github.com/tenderly/stylus/go-ethereum/ethclient"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/solgen/go/mocksgen"
+	"github.com/tenderly/stylus/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/colors"
+	"github.com/tenderly/stylus/util/testhelpers"
+	"github.com/tenderly/stylus/validator/valnode"
 	"github.com/wasmerio/wasmer-go/wasmer"
 )
 

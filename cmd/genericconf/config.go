@@ -7,9 +7,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
 )
 
 type ConfConfig struct {

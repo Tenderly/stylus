@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func testDecompress(t *testing.T, compressed, decompressed []byte) {

@@ -21,11 +21,11 @@ import (
 	"github.com/gobwas/ws/wsutil"
 	"github.com/mailru/easygo/netpoll"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
 
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 var (

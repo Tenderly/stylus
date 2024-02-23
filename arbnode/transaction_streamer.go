@@ -22,20 +22,20 @@ import (
 	flag "github.com/spf13/pflag"
 	"github.com/syndtr/goleveldb/leveldb"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/math"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/broadcaster"
-	"github.com/offchainlabs/nitro/staker"
-	"github.com/offchainlabs/nitro/util/sharedmetrics"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/broadcaster"
+	"github.com/tenderly/stylus/staker"
+	"github.com/tenderly/stylus/util/sharedmetrics"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 // TransactionStreamer produces blocks from a node's L1 messages, storing the results in the blockchain and recording their positions

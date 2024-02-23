@@ -6,17 +6,17 @@ import (
 	"path"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/leveldb"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/redis"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/slice"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/storage"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/redisutil"
-	"github.com/offchainlabs/nitro/util/signature"
+	"github.com/tenderly/stylus/arbnode/dataposter/leveldb"
+	"github.com/tenderly/stylus/arbnode/dataposter/redis"
+	"github.com/tenderly/stylus/arbnode/dataposter/slice"
+	"github.com/tenderly/stylus/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/go-ethereum/core/rawdb"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/redisutil"
+	"github.com/tenderly/stylus/util/signature"
 )
 
 var ignoreData = cmp.Options{

@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/hexutil"
+	"github.com/tenderly/stylus/go-ethereum/log"
 
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/blsSignatures"
-	"github.com/offchainlabs/nitro/util/pretty"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/blsSignatures"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
+	"github.com/tenderly/stylus/util/pretty"
 )
 
 type DASRPCClient struct { // implements DataAvailabilityService

@@ -17,17 +17,17 @@ import (
 	"github.com/go-redis/redis/v8"
 	flag "github.com/spf13/pflag"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
 
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/contracts"
-	"github.com/offchainlabs/nitro/util/redisutil"
-	"github.com/offchainlabs/nitro/util/signature"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/contracts"
+	"github.com/tenderly/stylus/util/redisutil"
+	"github.com/tenderly/stylus/util/signature"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 var (

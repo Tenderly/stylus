@@ -8,9 +8,9 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/offchainlabs/nitro/arbos/merkleAccumulator"
+	"github.com/tenderly/stylus/arbos/merkleAccumulator"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
 )
 
 func TestEmptyAccumulator(t *testing.T) {

@@ -1,9 +1,9 @@
 package server_common
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/util/containers"
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/util/containers"
+	"github.com/tenderly/stylus/validator"
 )
 
 type ValRun struct {

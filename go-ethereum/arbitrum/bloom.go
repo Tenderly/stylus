@@ -3,7 +3,7 @@ package arbitrum
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth"
+	"github.com/tenderly/stylus/go-ethereum/eth"
 )
 
 const (

@@ -4,8 +4,8 @@
 package precompiles
 
 import (
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 // ArbInfo povides the ability to lookup basic info about accounts and contracts.

@@ -6,10 +6,10 @@ package arbos
 import (
 	"testing"
 
-	"github.com/offchainlabs/nitro/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/arbosState"
 
-	"github.com/offchainlabs/nitro/arbos/storage"
-	"github.com/offchainlabs/nitro/arbos/util"
+	"github.com/tenderly/stylus/arbos/storage"
+	"github.com/tenderly/stylus/arbos/util"
 )
 
 func TestQueue(t *testing.T) {

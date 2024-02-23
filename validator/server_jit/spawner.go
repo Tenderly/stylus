@@ -9,11 +9,11 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 
-	"github.com/offchainlabs/nitro/util/stopwaiter"
-	"github.com/offchainlabs/nitro/validator"
-	"github.com/offchainlabs/nitro/validator/server_common"
+	"github.com/tenderly/stylus/util/stopwaiter"
+	"github.com/tenderly/stylus/validator"
+	"github.com/tenderly/stylus/validator/server_common"
 )
 
 type JitSpawnerConfig struct {

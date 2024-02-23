@@ -24,13 +24,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/v4test"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/cmd/devp2p/internal/v4test"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/internal/flags"
+	"github.com/tenderly/stylus/go-ethereum/p2p/discover"
+	"github.com/tenderly/stylus/go-ethereum/p2p/enode"
+	"github.com/tenderly/stylus/go-ethereum/params"
 	"github.com/urfave/cli/v2"
 )
 

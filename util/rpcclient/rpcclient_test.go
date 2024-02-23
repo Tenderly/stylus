@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func TestLogArgs(t *testing.T) {

@@ -12,12 +12,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbutil"
 
 	"github.com/gobwas/ws"
 	"github.com/gobwas/ws/wsflate"
 	"github.com/mailru/easygo/netpoll"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 // ClientConnection represents client connection.

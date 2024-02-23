@@ -13,10 +13,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
 	"github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/node"
 )
 
 var (

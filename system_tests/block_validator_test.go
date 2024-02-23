@@ -13,15 +13,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
 
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbos/l2pricing"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbos/l2pricing"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/solgen/go/precompilesgen"
 )
 
 type workloadType uint

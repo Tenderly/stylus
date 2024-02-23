@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/staker"
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/hexutil"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/staker"
+	"github.com/tenderly/stylus/validator"
 )
 
 type BlockValidatorAPI struct {

@@ -9,8 +9,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 )
 
 type Storage struct {

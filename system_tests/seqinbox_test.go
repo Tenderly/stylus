@@ -12,20 +12,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
 
-	"github.com/offchainlabs/nitro/arbcompress"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbos"
-	"github.com/offchainlabs/nitro/arbos/l2pricing"
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/solgen/go/bridgegen"
-	"github.com/offchainlabs/nitro/util"
+	"github.com/tenderly/stylus/arbcompress"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbos"
+	"github.com/tenderly/stylus/arbos/l2pricing"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/solgen/go/bridgegen"
+	"github.com/tenderly/stylus/util"
 )
 
 type blockTestState struct {

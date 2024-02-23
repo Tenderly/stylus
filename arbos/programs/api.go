@@ -1,5 +1,5 @@
 // Copyright 2023-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package programs
 
@@ -7,14 +7,14 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
 	"github.com/holiman/uint256"
-	"github.com/offchainlabs/nitro/arbos/util"
-	am "github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	am "github.com/tenderly/stylus/util/arbmath"
 )
 
 type getBytes32Type func(key common.Hash) (value common.Hash, cost uint64)

@@ -16,33 +16,32 @@ import (
 	"sync"
 	"time"
 
-	"github.com/offchainlabs/nitro/cmd/util"
+	"github.com/tenderly/stylus/cmd/util"
 
 	"github.com/cavaliergopher/grab/v3"
 	extract "github.com/codeclysm/extract/v3"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state/pruner"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi/bind"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/core/rawdb"
+	"github.com/tenderly/stylus/go-ethereum/core/state/pruner"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
 
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/storage"
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/arbos/arbosState"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/cmd/chaininfo"
-	"github.com/offchainlabs/nitro/cmd/ipfshelper"
-	"github.com/offchainlabs/nitro/staker"
-	"github.com/offchainlabs/nitro/statetransfer"
 	"github.com/spf13/pflag"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/cmd/chaininfo"
+	"github.com/tenderly/stylus/staker"
+	"github.com/tenderly/stylus/statetransfer"
 )
 
 type InitConfig struct {
@@ -102,25 +101,7 @@ func downloadInit(ctx context.Context, initConfig *InitConfig) (string, error) {
 	if strings.HasPrefix(initConfig.Url, "file:") {
 		return initConfig.Url[5:], nil
 	}
-	if ipfshelper.CanBeIpfsPath(initConfig.Url) {
-		ipfsNode, err := ipfshelper.CreateIpfsHelper(ctx, initConfig.DownloadPath, false, []string{}, ipfshelper.DefaultIpfsProfiles)
-		if err != nil {
-			return "", err
-		}
-		log.Info("Downloading initial database via IPFS", "url", initConfig.Url)
-		initFile, downloadErr := ipfsNode.DownloadFile(ctx, initConfig.Url, initConfig.DownloadPath)
-		closeErr := ipfsNode.Close()
-		if downloadErr != nil {
-			if closeErr != nil {
-				log.Error("Failed to close IPFS node after download error", "err", closeErr)
-			}
-			return "", fmt.Errorf("Failed to download file from IPFS: %w", downloadErr)
-		}
-		if closeErr != nil {
-			return "", fmt.Errorf("Failed to close IPFS node: %w", err)
-		}
-		return initFile, nil
-	}
+
 	grabclient := grab.NewClient()
 	log.Info("Downloading initial database", "url", initConfig.Url)
 	fmt.Println()

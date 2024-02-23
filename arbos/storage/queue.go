@@ -4,9 +4,9 @@
 package storage
 
 import (
-	"github.com/offchainlabs/nitro/arbos/util"
+	"github.com/tenderly/stylus/arbos/util"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 type Queue struct {

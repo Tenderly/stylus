@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 )
 
 type ArbitrumLegacyTxData struct {

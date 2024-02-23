@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/offchainlabs/nitro/arbnode/execution"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
 )
 
 func TestSequencerPause(t *testing.T) {

@@ -5,16 +5,16 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/offchainlabs/nitro/cmd/conf"
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/util/colors"
-	"github.com/offchainlabs/nitro/validator/valnode"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/cmd/conf"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/go-ethereum/p2p"
+	"github.com/tenderly/stylus/go-ethereum/p2p/nat"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
+	"github.com/tenderly/stylus/util/colors"
+	"github.com/tenderly/stylus/validator/valnode"
 )
 
 type ValidationNodeConfig struct {

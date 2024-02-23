@@ -12,17 +12,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/arbitrum"
-	"github.com/ethereum/go-ethereum/arbitrum_types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/solgen/go/mocksgen"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi"
+	"github.com/tenderly/stylus/go-ethereum/arbitrum"
+	"github.com/tenderly/stylus/go-ethereum/arbitrum_types"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common/hexutil"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/rpc"
+	"github.com/tenderly/stylus/solgen/go/mocksgen"
 )
 
 func getStorageRootHash(t *testing.T, node *arbnode.Node, address common.Address) common.Hash {

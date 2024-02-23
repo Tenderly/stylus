@@ -1,5 +1,5 @@
 // Copyright 2021-2024, Offchain Labs, Inc.
-// For license information, see https://github.com/OffchainLabs/nitro/blob/master/LICENSE
+// For license information, see https://github.com/tenderly/stylus/blob/master/LICENSE
 
 package arbmath
 
@@ -9,7 +9,7 @@ import (
 	"math/bits"
 	"unsafe"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/stylus/go-ethereum/params"
 )
 
 // NextPowerOf2 the smallest power of two greater than the input

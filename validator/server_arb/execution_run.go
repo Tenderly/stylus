@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/offchainlabs/nitro/util/containers"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
-	"github.com/offchainlabs/nitro/validator"
+	"github.com/tenderly/stylus/util/containers"
+	"github.com/tenderly/stylus/util/stopwaiter"
+	"github.com/tenderly/stylus/validator"
 )
 
 type executionRun struct {

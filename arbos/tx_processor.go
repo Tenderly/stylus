@@ -8,23 +8,23 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/offchainlabs/nitro/arbos/l1pricing"
+	"github.com/tenderly/stylus/arbos/l1pricing"
 
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/solgen/go/precompilesgen"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/util/arbmath"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbos/retryables"
+	"github.com/tenderly/stylus/arbos/retryables"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/params"
 
-	"github.com/offchainlabs/nitro/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/arbosState"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/vm"
-	glog "github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	glog "github.com/tenderly/stylus/go-ethereum/log"
 )
 
 var arbosAddress = types.ArbosAddress

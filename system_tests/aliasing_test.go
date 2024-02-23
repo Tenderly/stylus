@@ -9,12 +9,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/solgen/go/mocksgen"
-	"github.com/offchainlabs/nitro/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/solgen/go/mocksgen"
+	"github.com/tenderly/stylus/solgen/go/precompilesgen"
 )
 
 func TestAliasing(t *testing.T) {

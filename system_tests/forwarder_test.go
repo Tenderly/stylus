@@ -15,14 +15,14 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbnode/execution"
-	"github.com/offchainlabs/nitro/cmd/genericconf"
-	"github.com/offchainlabs/nitro/statetransfer"
-	"github.com/offchainlabs/nitro/util/redisutil"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbnode/execution"
+	"github.com/tenderly/stylus/cmd/genericconf"
+	"github.com/tenderly/stylus/go-ethereum/eth"
+	"github.com/tenderly/stylus/go-ethereum/ethclient"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/statetransfer"
+	"github.com/tenderly/stylus/util/redisutil"
 )
 
 var transferAmount = big.NewInt(1e12) // amount of ether to use for transactions in tests

@@ -4,8 +4,8 @@
 package precompiles
 
 import (
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 type ArbWasm struct {

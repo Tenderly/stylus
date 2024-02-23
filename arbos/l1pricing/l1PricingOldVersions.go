@@ -4,10 +4,10 @@
 package l1pricing
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/offchainlabs/nitro/arbos/util"
-	am "github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	am "github.com/tenderly/stylus/util/arbmath"
 	"math"
 	"math/big"
 )

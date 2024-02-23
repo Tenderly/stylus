@@ -7,10 +7,10 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/offchainlabs/nitro/arbos/storage"
-	"github.com/offchainlabs/nitro/arbos/util"
+	"github.com/tenderly/stylus/arbos/storage"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 )
 
 type AddressTable struct {

@@ -73,7 +73,7 @@ pub fn create(opts: &Opts, env: WasmEnv) -> (Instance, FunctionEnv<WasmEnv>, Sto
     }
     macro_rules! github {
         ($name:expr) => {
-            concat!("github.com/offchainlabs/nitro/", $name)
+            concat!("github.com/tenderly/stylus/", $name)
         };
     }
 

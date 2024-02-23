@@ -3,12 +3,12 @@ package execution
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/arbitrum"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/offchainlabs/nitro/util/headerreader"
+	"github.com/tenderly/stylus/go-ethereum/arbitrum"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/eth/filters"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/node"
+	"github.com/tenderly/stylus/util/headerreader"
 )
 
 type ExecutionNode struct {

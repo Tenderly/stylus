@@ -10,9 +10,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/util/redisutil"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/util/redisutil"
 )
 
 func main() {

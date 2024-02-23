@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/offchainlabs/nitro/arbos/storage"
+	"github.com/tenderly/stylus/arbos/storage"
 
-	"github.com/ethereum/go-ethereum/common"
-	templates "github.com/offchainlabs/nitro/solgen/go/precompilesgen"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	templates "github.com/tenderly/stylus/solgen/go/precompilesgen"
 )
 
 func TestRetryableRedeem(t *testing.T) {

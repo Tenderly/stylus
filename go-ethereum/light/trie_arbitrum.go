@@ -19,7 +19,7 @@ package light
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 func (db *odrDatabase) ActivateWasm(moduleHash common.Hash, asm, module []byte) error {

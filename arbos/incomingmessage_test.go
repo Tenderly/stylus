@@ -8,8 +8,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 func TestSerializeAndParseL1Message(t *testing.T) {

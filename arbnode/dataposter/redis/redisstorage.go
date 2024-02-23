@@ -9,10 +9,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/go-redis/redis/v8"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/storage"
-	"github.com/offchainlabs/nitro/util/signature"
+	"github.com/tenderly/stylus/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
+	"github.com/tenderly/stylus/util/signature"
 )
 
 // Storage implements redis sorted set backed storage. It does not support

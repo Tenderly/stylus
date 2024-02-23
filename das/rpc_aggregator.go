@@ -12,13 +12,13 @@ import (
 	"math/bits"
 	"net/url"
 
-	"github.com/offchainlabs/nitro/arbstate"
-	"github.com/offchainlabs/nitro/blsSignatures"
-	"github.com/offchainlabs/nitro/solgen/go/bridgegen"
-	"github.com/offchainlabs/nitro/util/metricsutil"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/blsSignatures"
+	"github.com/tenderly/stylus/solgen/go/bridgegen"
+	"github.com/tenderly/stylus/util/metricsutil"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/arbutil"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 type BackendConfig struct {

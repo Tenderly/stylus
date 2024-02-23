@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/offchainlabs/nitro/util/contracts"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
+	"github.com/tenderly/stylus/util/contracts"
 )
 
 type SignVerify struct {

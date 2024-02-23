@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbnode/redislock"
-	"github.com/offchainlabs/nitro/util/stopwaiter"
 	flag "github.com/spf13/pflag"
+	"github.com/tenderly/stylus/arbnode/redislock"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/util/stopwaiter"
 )
 
 // Regularly runs db compaction if configured

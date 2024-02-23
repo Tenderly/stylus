@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func TestIpv4BasicConnectionLimiting(t *testing.T) {

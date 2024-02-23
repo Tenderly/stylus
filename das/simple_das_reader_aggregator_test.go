@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/offchainlabs/nitro/das/dastree"
+	"github.com/tenderly/stylus/das/dastree"
 )
 
 func TestSimpleDASReaderAggregator(t *testing.T) { //nolint

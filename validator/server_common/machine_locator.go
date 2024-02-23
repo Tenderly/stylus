@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 type MachineLocator struct {

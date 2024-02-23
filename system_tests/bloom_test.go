@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/solgen/go/mocksgen"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/go-ethereum"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/solgen/go/mocksgen"
 )
 
 func TestBloom(t *testing.T) {

@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
 	fuzz "github.com/google/gofuzz"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi"
 )
 
 var (

@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/arbos/arbosState"
-	"github.com/offchainlabs/nitro/arbos/programs"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/colors"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/arbos/arbosState"
+	"github.com/tenderly/stylus/arbos/programs"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/colors"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func TestActivationDataFee(t *testing.T) {

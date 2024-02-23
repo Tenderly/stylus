@@ -17,8 +17,8 @@
 package trie
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/trie/trienode"
 )
 
 // tracer tracks the changes of trie nodes. During the trie operations,

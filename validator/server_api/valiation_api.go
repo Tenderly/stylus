@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 
-	"github.com/offchainlabs/nitro/util/stopwaiter"
-	"github.com/offchainlabs/nitro/validator"
-	"github.com/offchainlabs/nitro/validator/server_arb"
+	"github.com/tenderly/stylus/util/stopwaiter"
+	"github.com/tenderly/stylus/validator"
+	"github.com/tenderly/stylus/validator/server_arb"
 )
 
 const Namespace string = "validation"

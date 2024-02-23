@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/offchainlabs/nitro/arbnode/dataposter/storage"
 	"github.com/syndtr/goleveldb/leveldb"
+	"github.com/tenderly/stylus/arbnode/dataposter/storage"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/ethdb/memorydb"
+	"github.com/tenderly/stylus/go-ethereum/rlp"
 )
 
 // Storage implements leveldb based storage for batch poster.

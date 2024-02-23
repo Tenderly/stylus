@@ -10,8 +10,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/offchainlabs/nitro/blsSignatures"
+	"github.com/tenderly/stylus/blsSignatures"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
 )
 
 // Note for Decode functions

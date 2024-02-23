@@ -6,12 +6,12 @@ package gethhook
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbos"
-	"github.com/offchainlabs/nitro/precompiles"
+	"github.com/tenderly/stylus/arbos"
+	"github.com/tenderly/stylus/go-ethereum/accounts/abi"
+	"github.com/tenderly/stylus/go-ethereum/core"
+	"github.com/tenderly/stylus/go-ethereum/core/vm"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/precompiles"
 )
 
 type ArbosPrecompileWrapper struct {

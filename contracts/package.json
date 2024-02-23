@@ -6,13 +6,13 @@
   "license": "BUSL-1.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/offchainlabs/nitro-contracts.git"
+    "url": "git+https://github.com/tenderly/stylus-contracts.git"
   },
   "files": [
     "src/"
   ],
   "bugs": {
-    "url": "https://github.com/offchainlabs/nitro-contracts/issues"
+    "url": "https://github.com/tenderly/stylus-contracts/issues"
   },
   "scripts": {
     "build": "hardhat compile",

@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/util/testhelpers"
-	"github.com/offchainlabs/nitro/wsbroadcastserver"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/util/testhelpers"
+	"github.com/tenderly/stylus/wsbroadcastserver"
 )
 
 type predicate interface {

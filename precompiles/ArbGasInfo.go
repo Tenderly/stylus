@@ -6,11 +6,11 @@ package precompiles
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbos/l1pricing"
-	"github.com/offchainlabs/nitro/arbos/storage"
-	"github.com/offchainlabs/nitro/util/arbmath"
+	"github.com/tenderly/stylus/arbos/l1pricing"
+	"github.com/tenderly/stylus/arbos/storage"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/util/arbmath"
 )
 
 // ArbGasInfo provides insight into the cost of using the rollup.

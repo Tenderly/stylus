@@ -23,7 +23,7 @@ This repo is a fork of [Arbitrum Nitro][Nitro] and is designed as an upgrade for
 | [Bf SDK][Bf]                   | Educational                 | Apache 2.0 or MIT |
 | [Cargo Stylus CLI Tool][Cargo] | Program deployment          | Apache 2.0 or MIT |
 
-[Nitro]: https://github.com/OffchainLabs/nitro
+[Nitro]: https://github.com/tenderly/stylus
 [Orbit]: https://docs.arbitrum.io/launch-orbit-chain/orbit-gentle-introduction
 
 Stylus is entirely opt-in. Devs familiar with Solidity can continue to enjoy Arbitrum's EVM-equivalent experience without any changes. This is because Stylus is entirely additive &mdash; a model we call EVM+. Stylus introduces a second, fully composible virtual machine for executing WebAssembly that coordinates with the EVM to produce state transitions. And since the Stylus SDK uses solidity ABIs, a contract written in one language can call out to any other.

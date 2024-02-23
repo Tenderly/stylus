@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/broadcastclient"
-	"github.com/offchainlabs/nitro/relay"
-	"github.com/offchainlabs/nitro/util/signature"
-	"github.com/offchainlabs/nitro/wsbroadcastserver"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/broadcastclient"
+	"github.com/tenderly/stylus/relay"
+	"github.com/tenderly/stylus/util/signature"
+	"github.com/tenderly/stylus/wsbroadcastserver"
 )
 
 func newBroadcasterConfigTest() *wsbroadcastserver.BroadcasterConfig {

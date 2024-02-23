@@ -9,9 +9,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 
-	"github.com/offchainlabs/nitro/das/dastree"
+	"github.com/tenderly/stylus/das/dastree"
 )
 
 const iteratorStorageKeyPrefix = "iterator_key_prefix_"

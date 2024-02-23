@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
 
-	"github.com/offchainlabs/nitro/util/signature"
+	"github.com/tenderly/stylus/util/signature"
 )
 
 func TestStoreSigning(t *testing.T) {

@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/offchainlabs/nitro/blsSignatures"
+	"github.com/tenderly/stylus/blsSignatures"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/offchainlabs/nitro/arbstate"
+	"github.com/tenderly/stylus/arbstate"
+	"github.com/tenderly/stylus/go-ethereum/log"
 )
 
 func TestDAS_BasicAggregationLocal(t *testing.T) {

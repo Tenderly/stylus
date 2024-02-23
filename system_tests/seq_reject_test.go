@@ -14,13 +14,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/solgen/go/mocksgen"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/colors"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/params"
+	"github.com/tenderly/stylus/solgen/go/mocksgen"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/colors"
 )
 
 func TestSequencerRejection(t *testing.T) {

@@ -6,7 +6,7 @@ package pretty
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 )
 
 func FirstFewBytes(b []byte) string {

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/log"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

@@ -3,8 +3,8 @@ package validator
 import (
 	"context"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/offchainlabs/nitro/util/containers"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/util/containers"
 )
 
 type ValidationSpawner interface {

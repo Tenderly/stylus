@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/offchainlabs/nitro/arbcompress"
-	"github.com/offchainlabs/nitro/util/colors"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/arbcompress"
+	"github.com/tenderly/stylus/util/colors"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func TestZeroheavyNullInput(t *testing.T) {

@@ -12,11 +12,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/common"
 
-	"github.com/offchainlabs/nitro/arbos/util"
-	"github.com/offchainlabs/nitro/blsSignatures"
-	"github.com/offchainlabs/nitro/das/dastree"
+	"github.com/tenderly/stylus/arbos/util"
+	"github.com/tenderly/stylus/blsSignatures"
+	"github.com/tenderly/stylus/das/dastree"
 )
 
 type DataAvailabilityReader interface {

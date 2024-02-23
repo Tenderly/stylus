@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/andybalholm/brotli"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/core/types"
 
-	"github.com/offchainlabs/nitro/arbnode"
-	"github.com/offchainlabs/nitro/util/redisutil"
+	"github.com/tenderly/stylus/arbnode"
+	"github.com/tenderly/stylus/util/redisutil"
 )
 
 func TestBatchPosterParallel(t *testing.T) {

@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/offchainlabs/nitro/arbos/burn"
-	"github.com/offchainlabs/nitro/arbos/storage"
-	"github.com/offchainlabs/nitro/util/arbmath"
-	"github.com/offchainlabs/nitro/util/colors"
-	"github.com/offchainlabs/nitro/util/testhelpers"
+	"github.com/tenderly/stylus/arbos/burn"
+	"github.com/tenderly/stylus/arbos/storage"
+	"github.com/tenderly/stylus/util/arbmath"
+	"github.com/tenderly/stylus/util/colors"
+	"github.com/tenderly/stylus/util/testhelpers"
 )
 
 func PricingForTest(t *testing.T) *L2PricingState {

@@ -29,10 +29,10 @@ import (
 
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/bloom"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/ethdb"
+	"github.com/tenderly/stylus/go-ethereum/log"
+	"github.com/tenderly/stylus/go-ethereum/metrics"
 )
 
 const (
@@ -155,7 +155,7 @@ func New(file string, cache int, handles int, namespace string, readonly bool) (
 
 		// The size of memory table(as well as the write buffer).
 		// Note, there may have more than two memory tables in the system.
-		MemTableSize: memTableSize,
+		MemTableSize: uint64(memTableSize),
 
 		// MemTableStopWritesThreshold places a hard limit on the size
 		// of the existent MemTables(including the frozen one).
@@ -187,7 +187,7 @@ func New(file string, cache int, handles int, namespace string, readonly bool) (
 			WriteStallEnd:   db.onWriteStallEnd,
 		},
 	}
-	// Disable seek compaction explicitly. Check https://github.com/ethereum/go-ethereum/pull/20130
+	// Disable seek compaction explicitly. Check https://github.com/tenderly/stylus/go-ethereum/pull/20130
 	// for more details.
 	opt.Experimental.ReadSamplingMultiplier = -1
 
@@ -576,10 +576,13 @@ type pebbleIterator struct {
 // of database content with a particular key prefix, starting at a particular
 // initial key (or after, if it does not exist).
 func (d *Database) NewIterator(prefix []byte, start []byte) ethdb.Iterator {
-	iter := d.db.NewIter(&pebble.IterOptions{
+	iter, err := d.db.NewIter(&pebble.IterOptions{
 		LowerBound: append(prefix, start...),
 		UpperBound: upperBound(prefix),
 	})
+	if err != nil {
+		panic(err)
+	}
 	iter.First()
 	return &pebbleIterator{iter: iter, moved: true}
 }

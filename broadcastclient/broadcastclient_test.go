@@ -17,16 +17,16 @@ import (
 
 	"github.com/gobwas/ws"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/tenderly/stylus/go-ethereum/common"
+	"github.com/tenderly/stylus/go-ethereum/crypto"
 
-	"github.com/offchainlabs/nitro/arbos/arbostypes"
-	"github.com/offchainlabs/nitro/arbutil"
-	"github.com/offchainlabs/nitro/broadcaster"
-	"github.com/offchainlabs/nitro/util/contracts"
-	"github.com/offchainlabs/nitro/util/signature"
-	"github.com/offchainlabs/nitro/util/testhelpers"
-	"github.com/offchainlabs/nitro/wsbroadcastserver"
+	"github.com/tenderly/stylus/arbos/arbostypes"
+	"github.com/tenderly/stylus/arbutil"
+	"github.com/tenderly/stylus/broadcaster"
+	"github.com/tenderly/stylus/util/contracts"
+	"github.com/tenderly/stylus/util/signature"
+	"github.com/tenderly/stylus/util/testhelpers"
+	"github.com/tenderly/stylus/wsbroadcastserver"
 )
 
 func TestReceiveMessagesWithoutCompression(t *testing.T) {
