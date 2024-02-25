@@ -214,6 +214,7 @@ func (p Programs) DataPricer() *DataPricer {
 func (p Programs) ActivateProgram(evm *vm.EVM, address common.Address, debugMode bool) (
 	uint16, common.Hash, common.Hash, *big.Int, bool, error,
 ) {
+	panic("tried to activate program")
 	statedb := evm.StateDB
 	codeHash := statedb.GetCodeHash(address)
 	time := evm.Context.Time
