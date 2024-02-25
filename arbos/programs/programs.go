@@ -216,7 +216,6 @@ func (p Programs) ActivateProgram(evm *vm.EVM, address common.Address, debugMode
 ) {
 	statedb := evm.StateDB
 	codeHash := statedb.GetCodeHash(address)
-	burner := p.programs.Burner()
 	time := evm.Context.Time
 
 	stylusVersion, err := p.StylusVersion()
@@ -231,7 +230,7 @@ func (p Programs) ActivateProgram(evm *vm.EVM, address common.Address, debugMode
 		// already activated and up to date
 		return 0, codeHash, common.Hash{}, nil, false, ProgramUpToDateError()
 	}
-	wasm, err := getWasm(statedb, address)
+	_, err = getWasm(statedb, address)
 	if err != nil {
 		return 0, codeHash, common.Hash{}, nil, false, err
 	}
@@ -243,36 +242,17 @@ func (p Programs) ActivateProgram(evm *vm.EVM, address common.Address, debugMode
 	}
 	pageLimit = arbmath.SaturatingUSub(pageLimit, statedb.GetStylusPagesOpen())
 
-	info, err := activateProgram(statedb, address, wasm, pageLimit, stylusVersion, debugMode, burner)
-	if err != nil {
-		return 0, codeHash, common.Hash{}, nil, true, err
-	}
-	if err := p.moduleHashes.Set(codeHash, info.moduleHash); err != nil {
-		return 0, codeHash, common.Hash{}, nil, true, err
-	}
-
-	estimateKb, err := arbmath.IntToUint24(arbmath.DivCeil(info.asmEstimate, 1024)) // stored in kilobytes
-	if err != nil {
-		return 0, codeHash, common.Hash{}, nil, true, err
-	}
-	initGas24, err := arbmath.IntToUint24(info.initGas)
-	if err != nil {
-		return 0, codeHash, common.Hash{}, nil, true, err
-	}
-
-	dataFee, err := p.dataPricer.UpdateModel(info.asmEstimate, time)
+	dataFee, err := p.dataPricer.UpdateModel(0, time)
 	if err != nil {
 		return 0, codeHash, common.Hash{}, nil, true, err
 	}
 
 	programData := Program{
-		version:       stylusVersion,
-		initGas:       initGas24,
-		asmEstimateKb: estimateKb,
-		footprint:     info.footprint,
-		activatedAt:   time,
+		version:     stylusVersion,
+		footprint:   0,
+		activatedAt: time,
 	}
-	return stylusVersion, codeHash, info.moduleHash, dataFee, false, p.setProgram(codeHash, programData)
+	return stylusVersion, codeHash, common.Hash{}, dataFee, false, p.setProgram(codeHash, programData)
 }
 
 func (p Programs) CallProgram(
@@ -283,70 +263,7 @@ func (p Programs) CallProgram(
 	calldata []byte,
 	reentrant bool,
 ) ([]byte, error) {
-	evm := interpreter.Evm()
-	contract := scope.Contract
-	debugMode := evm.ChainConfig().DebugMode()
-
-	program, err := p.getProgram(contract.CodeHash, evm.Context.Time)
-	if err != nil {
-		return nil, err
-	}
-	moduleHash, err := p.moduleHashes.Get(contract.CodeHash)
-	if err != nil {
-		return nil, err
-	}
-	params, err := p.goParams(program.version, debugMode)
-	if err != nil {
-		return nil, err
-	}
-	l1BlockNumber, err := evm.ProcessingHook.L1BlockNumber(evm.Context)
-	if err != nil {
-		return nil, err
-	}
-
-	// pay for program init
-	open, ever := statedb.GetStylusPages()
-	model, err := p.memoryModel()
-	if err != nil {
-		return nil, err
-	}
-	memoryCost := model.GasCost(program.footprint, open, ever)
-	minInitGas, err := p.MinInitGas()
-	if err != nil {
-		return nil, err
-	}
-	callCost := uint64(program.initGas) + uint64(minInitGas)
-	cost := common.SaturatingUAdd(memoryCost, callCost)
-	if err := contract.BurnGas(cost); err != nil {
-		return nil, err
-	}
-	statedb.AddStylusPages(program.footprint)
-	defer statedb.SetStylusPagesOpen(open)
-
-	evmData := &evmData{
-		blockBasefee:    common.BigToHash(evm.Context.BaseFee),
-		chainId:         evm.ChainConfig().ChainID.Uint64(),
-		blockCoinbase:   evm.Context.Coinbase,
-		blockGasLimit:   evm.Context.GasLimit,
-		blockNumber:     l1BlockNumber,
-		blockTimestamp:  evm.Context.Time,
-		contractAddress: scope.Contract.Address(),
-		msgSender:       scope.Contract.Caller(),
-		msgValue:        common.BigToHash(scope.Contract.Value()),
-		txGasPrice:      common.BigToHash(evm.TxContext.GasPrice),
-		txOrigin:        evm.TxContext.Origin,
-		reentrant:       arbmath.BoolToUint32(reentrant),
-		tracing:         tracingInfo != nil,
-	}
-
-	address := contract.Address()
-	if contract.CodeAddr != nil {
-		address = *contract.CodeAddr
-	}
-	return callProgram(
-		address, moduleHash, scope, statedb, interpreter,
-		tracingInfo, calldata, evmData, params, model,
-	)
+	return nil, nil
 }
 
 func getWasm(statedb vm.StateDB, program common.Address) ([]byte, error) {
